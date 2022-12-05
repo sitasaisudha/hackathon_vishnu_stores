@@ -1,0 +1,9 @@
+.box-container{
+    height: 20rem;
+    width: 20rem;
+    border: 2px solid rgb(210, 204, 204);
+}
+.box-container:hover{
+    border: 2px solid black;
+}
+    

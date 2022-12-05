@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css file  -->
+    <link rel="stylesheet" href="hack.css" />
+
+    <!-- font awesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- swiper cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- bootstrap cdn -->
+    <link
+      rel="stylesheet"
+      href=" https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a id="hd" href="#">
+        <img src="images/vishnulogo.bmp" alt="" />
+        <span>Vishnu Store</span>
+      </a>
+
+      <nav>
+        <button><i class="fa fa-search" id="search-btn"></i></button>
+        <button><i class="fa fa-user" id="user-btn"></i></button>
+        <button><i class="fa fa-shopping-cart" id="cart-btn"></i></button>
+      </nav>
+      <form action="" class="search-form">
+        <input
+          type="search"
+          name=""
+          class="search-box"
+          id="ser"
+          placeholder="search here....."
+        />
+        <label for="search-box" class="fa fa-search" style="color: rgb(206, 18, 220);"></label>
+      </form>
+      <div class="row" id="cart">
+        <table id="tab" class="table table-bordered  text-light" style="width: 400px;">
+          <thead>
+            <tr>
+              <td>Name</td>
+              
+              <td>Cost per ecah item</td>
+              <td>Items</td>
+            </tr>
+            
+          </thead>
+          <tbody>
+
+          </tbody>
+          
+        </table>
+        <h4 id="maduri">"Total = "</h4> 
+        
+        <a href="checkout.html"><button id="maddy" class="btn btn-success">checkout</button></a>
+         
+      </div>
+      <div class="logo" id="login" style="background-color: rgb(129, 26, 161); width: 600px; height: 500px; color: #fff;">
+        <div class="row"><img src="images/user.webp" alt="" style="height: 100px; width:100px; border: radius 50%;"></div>
+        <div class="row">
+          <label for=""> User name :</label>
+        <input type="text" placeholder="sudha@123" id="uname">
+        </div>
+        
+        <div class="row">
+          <label for="">Password :</label>
+          <input type="password" name="" id="pname" placeholder="sud123">
+       
+        </div>
+       <a href="index.html"><button  style="margin-left: 15rem; height: 30px;width: 100px; font-size: small;" onclick="validate()">Login</button>
+       </a>   <br><br><br>
+        <div class="admn">
+          <p style="margin-left: 150px;">Are you here for admin login ?</p>
+          <div class="row">
+            <label for=""> Admin name :</label>
+          <input type="text" placeholder="sudha@123" id="aname">
+          </div>
+          
+          <div class="row">
+            <label for="">Admin Password :</label>
+            <input type="password" name="" id="apas" placeholder="sud123">
+          </div> <br>
+          <a href="adminpage.html" style="font-size: 20px; margin-left: 150px;" > <button style="height: 30px;width: 200px;" onclick="validate2()">Admin Login</button></a>
+         
+         </div>
+      </div>
+        
+    </header>
+
+    <!-- header section edns -->
+
+    <!-- navigation scetion begins -->
+    <section class="naviagation">
+      <div class="nave">
+        <a href="#temple-square">
+          <button><img src="images/tslogo.webp" alt="" /></button
+        ></a>
+        <a href="#central-square"
+          ><button><img src="images/cake_icon.webp" alt="" /></button
+        ></a>
+        <a href="#yummy"
+          ><button><img src="images/yum_icon.png" alt="" /></button
+        ></a>
+        <a href="#shakes"
+          ><button><img src="images/shkicon.webp" alt="" /></button
+        ></a>
+        <a href="#amul"
+          ><button><img src="images/ice1.webp" alt="" /></button
+        ></a>
+        <a href="#juices"
+          ><button><img src="images/juice_icon.webp" alt="" /></button
+        ></a>
+      </div>
+    </section>
+    <!-- navigation section ends here -->
+
+    <!-- sliding images are here -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1589378884250-431463f05637?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1510936994138-07e06c7c5add?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1176&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://www.ethicalconsumer.org/sites/default/files/images/2018-04/shampoo%20brands.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1518013431117-eb1465fa5752?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZnJlbmNoJTIwZnJpZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1586985290301-8db40143d525?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt=""></div>
+       
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- sliding images end here -->
+
+    <!-- temple square section begins here -->
+
+    <section class="ts" id="temple-square">
+
+      <h1 class="heading">
+        Temple <span>Square</span>
+    </h1>
+    
+      
+      <div class="swiper ourSwiper">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts1.webp" style="border: 1px solid black;" />
+                  <h3>Bithday cap</h3>
+                  <h5 id="price">Rs <i id='r'> 500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts10.jpg" style="border: 1px solid black;" />
+                  <h3>Pens</h3>
+                  <h5 id="price">Rs <i id="r">500</i> </h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts9.webp" style="border: 1px solid black;" />
+                  <h3>Face Crean</h3>
+                  <h5 id="price">Rs  <i id="r">500</i> </h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts8.webp" style="border: 1px solid black;" />
+                  <h3>Face wash</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts7.jpg" style="border: 1px solid black;" />
+                  <h3>Ponds cream</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts6.jpg" style="border: 1px solid black;" />
+                  <h3>Dettol</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts2.jpg" style="border: 1px solid black;" />
+                  <h3>Teddy</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts4.jpg" style="border: 1px solid black;" />
+                  <h3>Comb</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ts5.jpg" style="border: 1px solid black;" />
+                  <h3>birthday crown</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <div class="but"><a href="ts.html"><input type="button" value="view more" class="btn btn-success"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+   
+
+      
+
+    </section>
+    <!-- temple square ends here -->
+
+    <!-- central square section starts here -->
+    <section class="ts" id="central-square">
+
+
+      <h1 class="heading">
+        central <span>Square</span>
+    </h1>
+    
+      
+      <div class="swiper ourSwiper">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/cake_1.webp" style="border: 1px solid black;" />
+                  <h3>Bithday cake</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/cake_2.webp" style="border: 1px solid black;" />
+                  <h3>Choco lava cake</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/cup_cake3.webp" style="border: 1px solid black;" />
+                  <h3>Cup cake</h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/donut_cake4.webp" style="border: 1px solid black;" />
+                  <h3>Donut </h3>
+                  <h5 id="price">Rs  <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/cake_5.webp" style="border: 1px solid black;" />
+                  <h3>Red velvet cak <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/cake_6.webp" style="border: 1px solid black;" />
+                  <h3>Rain bow cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/cake7.webp" style="border: 1px solid black;" />
+                  <h3>Special chocolate cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+   
+
+
+    </section>
+
+    <!-- central square section ends here -->
+
+
+    <!-- yummy section starts here -->
+
+    <section class="ts" id="yummy">
+
+
+      <h1 class="heading">
+        <span>Yummy</span>
+    </h1>
+    
+      
+      <div class="swiper ourSwiper">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum1.webp" style="border: 1px solid black;" />
+                  <h3>Bithday cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum2.jpg" style="border: 1px solid black;" />
+                  <h3>Choco lava cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum3.webp" style="border: 1px solid black;" />
+                  <h3>Cup cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum4.webp" style="border: 1px solid black;" />
+                  <h3>Donut </h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum5.webp" style="border: 1px solid black;" />
+                  <h3>Red velvet cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum6.webp" style="border: 1px solid black;" />
+                  <h3>Rain bow cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/yum7.jpg" style="border: 1px solid black;" />
+                  <h3>Special chocolate cake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>  
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/yum8.jpg" style="border: 1px solid black;" />
+                    <h3>Special chocolate cake</h3>
+                    <h5 id="price">Rs <i id="r">500</i></h5>
+                    <label for="num">No. of items :</label>
+                    <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                    <br>
+                    <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+              </div>
+            </div>   
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/yum9.webp" style="border: 1px solid black;" />
+                      <h3>Special chocolate cake</h3>
+                      <h5 id="price">Rs <i id="r">500</i></h5>
+                      <label for="num">No. of items :</label>
+                      <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                      <br>
+                      <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/yum10.webp" style="border: 1px solid black;" />
+                      <h3>Special chocolate cake</h3>
+                      <h5 id="price">Rs <i id="r">500</i></h5>
+                      <label for="num">No. of items :</label>
+                      <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                      <br>
+                      <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+                </div>
+              </div>
+
+        </div>
+            
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div>
+      
+   
+
+
+    </section>
+
+    <!-- yummy section ends here -->
+
+    <!-- ice creams section starts here -->
+    <section class="ts" id="amul">
+
+
+      <h1 class="heading">
+       Ice<span>Creams</span>
+    </h1>
+    
+      
+      <div class="swiper ourSwiper">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice2.webp" style="border: 1px solid black;" />
+                  <h3>vanila special</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice3.jpg" style="border: 1px solid black;" />
+                  <h3>Choco bar</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice4.jpg" style="border: 1px solid black;" />
+                  <h3>Corneto</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice5.jpg" style="border: 1px solid black;" />
+                  <h3>Rainbow scoops </h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice6.jpg" style="border: 1px solid black;" />
+                  <h3>Scoop special</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice7.jpg" style="border: 1px solid black;" />
+                  <h3>Straw berry ice cream</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/ice8.jpg" style="border: 1px solid black;" />
+                  <h3>Trio</h3>
+                  <h5 id="price">Rs<i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>  
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/ice9.jpg" style="border: 1px solid black;" />
+                    <h3>Spiral</h3>
+                    <h5 id="price">Rs<i id="r">500</i></h5>
+                    <label for="num">No. of items :</label>
+                    <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                    <br>
+                    <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+              </div>
+            </div>   
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/ice10.jpg" style="border: 1px solid black;" />
+                      <h3>Sandwich icecrems</h3>
+                      <h5 id="price">Rs <i id="r">500</i></h5>
+                      <label for="num">No. of items :</label>
+                      <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                      <br>
+                      <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/ice11.webp" style="border: 1px solid black;" />
+                      <h3>Chocolate cone</h3>
+                      <h5 id="price">Rs <i id="r">500</i></h5>
+                      <label for="num">No. of items :</label>
+                      <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                      <br>
+                      <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+                </div>
+              </div>
+
+        </div>
+            
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div>
+      
+   
+
+
+    </section>
+    <!-- ice cream section ends here -->
+
+    <!-- shakes section starts here -->
+
+    <section class="ts" id="shakes">
+
+
+      <h1 class="heading">
+       Milk <span>Shakes </span>
+    </h1>
+    
+      
+      <div class="swiper ourSwiper">
+        
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk1.webp" style="border: 1px solid black;" />
+                  <h3>Chocolate milk shake</h3>
+                  <h5 id="price">Rs<i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk3.webp" style="border: 1px solid black;" />
+                  <h3>Oreo shake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk4.webp" style="border: 1px solid black;" />
+                  <h3>Cherry shake</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk5.webp" style="border: 1px solid black;" />
+                  <h3> Strwa berry shake </h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk6.webp" style="border: 1px solid black;" />
+                  <h3>Chia shake</h3>
+                  <h5 id="price">Rs<i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk7.webp" style="border: 1px solid black;" />
+                  <h3>Blue mojitho</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/shk8.webp" style="border: 1px solid black;" />
+                  <h3>Orange mojitho</h3>
+                  <h5 id="price">Rs <i id="r">500</i></h5>
+                  <label for="num">No. of items :</label>
+                  <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                  <br>
+                  <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+            </div>
+          </div>  
+            <div class="swiper-slide">
+              <div class="box">
+                <img src="images/shk9.jpg" style="border: 1px solid black;" />
+                    <h3>Lemon mojitho</h3>
+                    <h5 id="price">Rs <i id="r">500</i></h5>
+                    <label for="num">No. of items :</label>
+                    <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                    <br>
+                    <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+              </div>
+            </div>   
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/shk10.jpg" style="border: 1px solid black;" />
+                      <h3>Capuchino</h3>
+                      <h5 id="price">Rs <i id="r">500</i></h5>
+                      <label for="num">No. of items :</label>
+                      <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                      <br>
+                      <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <img src="images/shk11.webp" style="border: 1px solid black;" />
+                      <h3>Cold coffee</h3>
+                      <h5 id="price">Rs <i id="r">500</i></h5>
+                      <label for="num">No. of items :</label>
+                      <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                      <br>
+                      <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+                </div>
+              </div>
+
+        </div>
+            
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+           <div class="swiper-pagination"></div>
+      
+   
+
+
+    </section>
+  <!-- shakes section ends here -->
+
+  <!-- fruit juices scetion starts here -->
+  <section class="ts" id="juices">
+
+
+    <h1 class="heading">
+     Fruit <span>Juices </span>
+  </h1>
+  
+    
+    <div class="swiper ourSwiper">
+      
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/watermelon juice.png" style="border: 1px solid black;" />
+                <h3>Water melon juice</h3>
+                <h5 id="price">Rs <i id="r">500</i></h5>
+                <label for="num">No. of items :</label>
+                <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                <br>
+                <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/ban juice.jpg" style="border: 1px solid black;" />
+                <h3>Banana juice</h3>
+                <h5 id="price">Rs <i id="r">500</i></h5>
+                <label for="num">No. of items :</label>
+                <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                <br>
+                <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/grap juice.webp" style="border: 1px solid black;" />
+                <h3>Grape juice</h3>
+                <h5 id="price">Rs <i id="r">500</i></h5>
+                <label for="num">No. of items :</label>
+                <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                <br>
+                <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/mang juice.png" style="border: 1px solid black;" />
+                <h3> Mango juice </h3>
+                <h5 id="price">Rs <i id="r">500</i></h5>
+                <label for="num">No. of items :</label>
+                <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                <br>
+                <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="box">
+            <img src="images/orange juice.webp" style="border: 1px solid black;" />
+                <h3>Orange juice</h3>
+                <h5 id="price">Rs <i id="r">500</i></h5>
+                <label for="num">No. of items :</label>
+                <input type="number" name="" id="num" style="width: 3rem; " value="1" min="1">
+                <br>
+                <input type="button" value="Add to cart"  id="btn" class="btn btn-success"> <br>
+          </div>
+        </div>
+
+        
+
+      </div>
+          
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+         <div class="swiper-pagination"></div>
+    
+ 
+
+
+  </section>
+
+
+  <!-- fruit juices section ends here -->
+
+    
+
+
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--javascript link  -->
+    <script src="hack.js"></script>
+  </body>
+</html>

@@ -1,0 +1,215 @@
+.root{
+    --box-shadow: 0 1.5rem 1rem rgba(0, 0, 0, .1);
+}
+body{
+    background-color: rgba(176, 181, 181, 0.714);
+   
+}
+#hd{
+    text-decoration: none;
+     
+}
+#hd:hover{
+    text-decoration: none;
+  
+}
+/* heading poly gon  */
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: black;
+}
+.heading span{
+    background: #fff;
+    color: rgb(183, 53, 165);
+    display: inline-block;
+    padding: .5rem 1.5rem;
+    clip-path: polygon(100% 0%,93% 50%, 100% 99%,0% 100%,7% 50%,0% 0%);
+}
+/* heading poly gon end */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(230, 135, 236);
+}
+.header  img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+.header a{
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+}
+.header button{
+    height: 4rem;
+    width: 4rem;
+    margin: 1rem;
+    border: 0;
+
+}
+.header button i{
+    font-size: 2rem;
+    margin: 0 
+}
+.search-form{
+    width: 25rem;
+    height: 3rem;
+    background: #fff;
+    position: absolute;
+    top: -110%;
+    right: 110%;
+}
+.search-form input{
+    width: 20rem;
+    height: 3rem;
+    background: #fff;
+    border: 0;
+    
+   
+    
+}
+.search-form input:hover{
+    border: 0;
+}
+.search-form label{
+    font-size: 2rem;
+}
+.search-form.active{
+    top: 8rem;
+    right: 2rem;
+   background-color: #fff;
+
+}
+#cart{
+    z-index: 100;
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    display: block;
+    background-color: #fff;
+}
+#cart.active{
+    top: 5rem;
+    right: 10rem;
+}
+#cart button{
+    height: 30px;
+    width: 150px;
+    background-color: blueviolet;
+}
+
+#login{
+    
+    z-index: 100;
+    position: absolute;
+    top: 110%;
+    right: -110%;   
+}
+#login.active{
+    top: 5rem;
+    right: 10rem;
+}
+table{
+    background-color: rgb(166, 27, 179);
+    
+}
+
+/* .navigation a button img{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+} */
+.nave a{
+    height: 100px;
+    width: 100px;
+}
+.nave{
+    
+    
+    margin-top: 2rem;
+    background-color: rgb(230, 135, 236);
+    padding: 1rem;
+   
+}
+.nave button{
+    height: 85px;
+    width: 85px;
+  border-radius: 50%;
+    margin: 0 4rem;
+    border: 1px solid black;
+}
+.nave img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+/* sliding swiper css */
+.swiper {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+  }
+/* temple square */
+
+.ts{
+    
+    background-color: rgb(230, 135, 236);
+}
+.ts .swiper{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 570px;
+  }
+
+ .ts .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+  }
+
+ .ts .swiper-slide img {
+    display: block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+  }
